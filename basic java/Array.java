@@ -1,15 +1,12 @@
-// Java program remove all occurrences 
-// of an element from Array using naive method 
 
 import java.util.Arrays; 
 
 class Array { 
 
-	// function to remove all occurrences 
-	// of an element from an array 
+	
 	public static int[] removeElements(int[] arr, int key) 
 	{ 
-		// Move all other elements to beginning 
+		
 		int index = 0; 
 		for (int i=0; i<arr.length; i++) 
 			if (arr[i] != key) 
@@ -19,7 +16,6 @@ class Array {
 		return Arrays.copyOf(arr, index); 
 	} 
 
-	// Driver code 
 	public static void main(String[] args) 
 	{ 
 		int[] array = { 3, 9, 2, 3, 1, 7, 2, 3, 5 }; 
